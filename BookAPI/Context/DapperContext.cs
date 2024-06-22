@@ -9,10 +9,10 @@ namespace BookAPI.Context
 
         private readonly IConfiguration _configuration;
         private readonly string _sqlConnection;
-        public DapperContext(IConfiguration configuration, string sqlConnection)
+        public DapperContext(IConfiguration configuration)
         {
             _configuration = configuration;
-            _sqlConnection = _configuration.GetConnectionString("");
+            _sqlConnection = _configuration.GetConnectionString("BookAPI");
         }
 
         public IDbConnection CreateConnection() => new MySqlConnection(_sqlConnection);

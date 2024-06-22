@@ -10,8 +10,8 @@ builder.Services.AddControllers();
 
 // Services
 
-//builder.Services.AddSingleton<DapperContext>();
-//builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
+builder.Services.AddSingleton<DapperContext>();
+builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 
 
 //
