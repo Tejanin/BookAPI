@@ -48,9 +48,11 @@ namespace BookAPI.Context
                 entity.HasKey(entity => entity.Id);
 
                 entity.Property(entity => entity.CreatedAt)
-                .IsRequired();
+                .IsRequired()
+                .HasDefaultValue(DateTime.Now);
 
-                entity.Property(entity => entity.IsDeleted);
+                entity.Property(entity => entity.IsDeleted)
+                .HasDefaultValue(false);
 
 
 
