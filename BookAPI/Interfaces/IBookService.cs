@@ -1,4 +1,4 @@
-﻿using BookAPI.Entities;
+﻿using BookAPI.Models.Entities;
 
 namespace BookAPI.Interfaces
 {

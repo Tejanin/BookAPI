@@ -1,6 +1,6 @@
-﻿using BookAPI.DTOs;
-using BookAPI.Entities;
-using BookAPI.ResponseModels;
+﻿using BookAPI.Models.Entities;
+using BookAPI.Models.DTOs;
+using BookAPI.Models.ResponseModels;
 
 namespace BookAPI.Interfaces
 {

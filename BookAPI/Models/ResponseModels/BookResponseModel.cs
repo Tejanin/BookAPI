@@ -1,6 +1,5 @@
-﻿using BookAPI.Entities;
-
-namespace BookAPI.ResponseModels
+﻿
+namespace BookAPI.Models.ResponseModels
 {
     public class BookResponseModel
     {

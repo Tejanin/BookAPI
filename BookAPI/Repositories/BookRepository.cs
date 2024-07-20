@@ -1,8 +1,8 @@
 ﻿using BookAPI.Context;
-using BookAPI.DTOs;
-using BookAPI.Entities;
+using BookAPI.Models.Entities;
 using BookAPI.Interfaces;
-using BookAPI.ResponseModels;
+using BookAPI.Models.DTOs;
+using BookAPI.Models.ResponseModels;
 using Dapper;
 
 namespace BookAPI.Repositories
