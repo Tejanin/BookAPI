@@ -1,9 +1,10 @@
-﻿using BookAPI.DTOs;
-using BookAPI.Entities;
-using BookAPI.ResponseModels;
+﻿using BookAPI.Models.Entities;
+using BookAPI.Models.DTOs;
+using BookAPI.Models.ResponseModels;
 using BookAPI.UnitOfWork;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using BookAPI.Handlers;
 
 namespace BookAPI.Controllers
 {
@@ -14,6 +15,8 @@ namespace BookAPI.Controllers
         private readonly IUnitOfWork _unitOfWork;
 
         public BookController(IUnitOfWork unitOfWork) =>  _unitOfWork = unitOfWork;
+
+
 
         [HttpGet]
         [Route("getAllBooks")]
@@ -41,6 +44,16 @@ namespace BookAPI.Controllers
             
 
             
+        }
+
+        [HttpPost]
+        [Route("uploadBook")]
+        public IActionResult uploadBook(IFormFile file)
+        {
+           UploadHandler handler = new UploadHandler();
+           return Ok(handler.Upload(file));
+
+
         }
 
 

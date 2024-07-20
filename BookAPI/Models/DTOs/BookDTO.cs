@@ -1,6 +1,6 @@
-﻿using BookAPI.Entities;
+﻿using BookAPI.Models.Entities;
 
-namespace BookAPI.DTOs
+namespace BookAPI.Models.DTOs
 {
     public class BookDTO
     {
